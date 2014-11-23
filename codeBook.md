@@ -1,4 +1,6 @@
 # Code Book
+The code book describes the variables, the data, and any transformations or work that has been
+performed to clean up the data.
 
 ## Data source
 
