@@ -49,10 +49,3 @@ For example, tBodyAcc-mean()-X` becomes tbodyacc-mean-x`.
 
 * mergedTidyData.txt: a space-delimited value file that contains mean and standard deviation for each measurements from the train and test data,
 * tidyAverageData.txt: a space-delimited value file that contains tidy data set with the average of each variable for each activity and each subject
-
-If you want to load those files using R, use the following commands:
-
-```
-read.table('mergedTidyData.txt')
-read.table('tidyAverageData.txt')
-```
