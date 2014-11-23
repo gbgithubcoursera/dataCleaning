@@ -6,11 +6,36 @@ performed to clean up the data.
 
 The data has been downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-For information about the experiment and the way data was collected, please read README.txt contained in the data source zip file.
+The source data contains a README.txt file that contains all the details of the experiments carried. The data set collected was from a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist.
 
 ## Variables
 
-All the column names are described in README.txt data source zip file, except for the following columns that were added:
+The collected dataset was package in different files each of which contains different details for the dataset.(Please refer to the README.txt in the source data file for a detailed description).
+
+The central data files that are we are working with are:
+	* Training data set.
+	* Test data set.
+
+The mojor components of the data set or exprement were:
+	* Features
+	* Activities
+	* Subjects
+
+In brief:
+	* 'features.txt': List of all features.
+	* 'activity_labels.txt': Links the class labels with their activity name. 
+	* 'subject_train.txt': Each row identifies the subject who performed the activity for each window sample.
+
+
+# The run_analysis Script:
+
+In this script we are goin to accomplish the following:
+     (a) Merges the training and the test sets to create one data set.                           
+     (b) Extracts only the measurements on the mean and standard deviation for each measurement. 
+     (c) Uses descriptive activity names to name the activities in the data set                  
+     (d) Appropriately labels the data set with descriptive variable names.                      
+     (e) From the data set in (d), creates a second, independent tidy data set with              
+         the average of each variable for each activity and each subject.         
 
 * subjectnumber: the string that corresponds to the subject of the experiment
 * activity: a string that represent the activity of the subject while collecting data points
