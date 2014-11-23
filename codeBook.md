@@ -29,11 +29,11 @@ In brief:
 # The run_analysis Script:
 
 In this script we are goin to accomplish the following:
-(a) Merges the training and the test sets to create one data set.                           
-(b) Extracts only the measurements on the mean and standard deviation for each measurement. 
-(c) Uses descriptive activity names to name the activities in the data set                  
-(d) Appropriately labels the data set with descriptive variable names.                      
-(e) From the data set in (d), creates a second, independent tidy data set with              
+--- Merges the training and the test sets to create one data set.                           
+--- Extracts only the measurements on the mean and standard deviation for each measurement. 
+--- Uses descriptive activity names to name the activities in the data set                  
+--- Appropriately labels the data set with descriptive variable names.                      
+--- From the data set in (d), creates a second, independent tidy data set with              
     the average of each variable for each activity and each subject.         
 
 The script reads both training and test data
