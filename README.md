@@ -12,14 +12,14 @@ Data used in this project was downloaded from the following source:
 
 The source zip file contains a README.txt file with a detailed description of the dataset contained within.
 
-About the script and the tidy dataset
--------------------------------------
-The  created  script called run_analysis.R merges the test and training data sets together.
+The run_anlysis.R script and the tidy dataset
+----------------------------------------------
+The  created  script called runanalysis.R merges the test and training data sets together.
 
 After merging testing and training, labels are added and only columns that have to do with mean and standard deviation are kept.
 
-Lastly, the script will create a tidy data set containing the means of all the columns per test subject and per activity.
-This tidy dataset will be written to a tab-delimited file called tidy.txt, which can also be found in this repository.
+The merged data is written to an intermediary file called mergedTidyData.txt from which the same data, the script creates a tidy data set containing the means of all the columns per test subject and per activity.
+This tidy dataset is then written to a tab-delimited file called tidyAverageData.txt.
 
 About the Code Book
 -------------------
