@@ -3,25 +3,18 @@ Getting and Cleaning Data: Course Project
 
 Introduction
 ------------
-This repository contains my work for the course project for the Coursera course "Getting and Cleaning data", part of the Data Science specialization.
-What follows first are my notes on the original data.
+The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis. 
 
-About the raw data
-------------------
+Source raw data
+----------------
+Data used in this project was downloaded from the following source: 
+* https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-The features (561 of them) are unlabeled and can be found in the x_test.txt. 
-The activity labels are in the y_test.txt file.
-The test subjects are in the subject_test.txt file.
-
-The same holds for the training set.
+The source zip file contains a README.txt file with a detailed description of the dataset contained within.
 
 About the script and the tidy dataset
 -------------------------------------
-I created a script called run_analysis.R which will merge the test and training sets together.
-Prerequisites for this script:
-
-1. the UCI HAR Dataset must be extracted and..
-2. the UCI HAR Dataset must be availble in a directory called "UCI HAR Dataset"
+The  created  script called run_analysis.R merges the test and training data sets together.
 
 After merging testing and training, labels are added and only columns that have to do with mean and standard deviation are kept.
 
