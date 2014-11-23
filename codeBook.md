@@ -6,7 +6,7 @@ performed to clean up the data.
 
 The data has been downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-The source data contains a README.txt file that contains all the details of the experiments carried. The data set collected was from a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist.
+The source data contains a README.txt file that contains all the details of the experiments carried out. The data set collected was from a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist.
 
 ## Variables
 
@@ -28,7 +28,7 @@ In brief:
 
 # The run_analysis Script:
 
-In this script we are goin to accomplish the following:
+In this script we are going to accomplish the following:
 * Merges the training and the test sets to create one data set.                           
 * Extracts only the measurements on the mean and standard deviation for each measurement. 
 * Uses descriptive activity names to name the activities in the data set                  
@@ -36,22 +36,23 @@ In this script we are goin to accomplish the following:
 * From the data set in (d), creates a second, independent tidy data set with              
    the average of each variable for each activity and each subject.         
 
-The script reads both training and test data
+The script reads both training and test data/files, then merges both the training and test files.
+From the merged dataset we retain each record/measuremet that contains mean and standard deviation.
+Based on activity_labels.txt, we derive descriptive activity column names.
+ 
 * subjectnumber: the string that corresponds to the subject of the experiment
 * activity: a string that represent the activity of the subject while collecting data points
-
-Because run_analysis was coded without hardcoding any column names or positions, here are the rules applied by run_analysis.R in order to get clean column names: it removes "(" and ")" and lowercase original feature names.
 
 For example, tBodyAcc-mean()-X` becomes tbodyacc-mean-x`.
 
 # Output
 
-* tidy_data.txt: a space-delimited value file that contains mean and standard deviation for each measurements from the train and test data,
-* average_data.txt: a space-delimited value file that contains tidy data set with the average of each variable for each activity and each subject
+* mergedTidyData.txt: a space-delimited value file that contains mean and standard deviation for each measurements from the train and test data,
+* tidyAverageData.txt: a space-delimited value file that contains tidy data set with the average of each variable for each activity and each subject
 
 If you want to load those files using R, use the following commands:
 
 ```
-read.table('tidy_data.txt')
-read.table('average_data')
+read.table('mergedTidyData.txt')
+read.table('tidyAverageData.txt')
 ```
