@@ -13,13 +13,13 @@ The source data contains a README.txt file that contains all the details of the 
 The collected dataset was package in different files each of which contains different details for the dataset.(Please refer to the README.txt in the source data file for a detailed description).
 
 The central data files that are we are working with are:
-	* Training data set.
-	* Test data set.
+* Training data set.
+* Test data set.
 
 The mojor components of the data set or exprement were:
-	* Features
-	* Activities
-	* Subjects
+* Features
+* Activities
+* Subjects
 
 In brief:
 	* 'features.txt': List of all features.
